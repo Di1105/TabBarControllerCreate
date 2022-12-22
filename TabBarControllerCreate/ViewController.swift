@@ -57,6 +57,8 @@ class ViewController: UIViewController {
         //Title subtitle arka plan renkleri değişecek. subtitle itemların rengi değişecek
         
         for x in 0..<items.count {
+            items[x].badgeValue = "1"
+            items[x].image?.withTintColor(.red)
             items[x].image = UIImage(systemName : image[x])
             
         }
